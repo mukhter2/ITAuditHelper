@@ -129,7 +129,7 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_TIMEOUT = 10  # Set a timeout value
 EMAIL_HOST_USER = 'manhaira2122@gmail.com'  # Set your email address
-EMAIL_HOST_PASSWORD = 'AC-1200mesh' 
+EMAIL_HOST_PASSWORD = 'pass' 
 
 
 # Internationalization

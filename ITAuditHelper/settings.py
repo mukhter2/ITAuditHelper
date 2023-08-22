@@ -86,9 +86,9 @@ WSGI_APPLICATION = 'ITAuditHelper.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ItAuditHelper',        # Name of the database you created
+        'NAME': 'postgres',        # Name of the database you created
         'USER': 'postgres',  # Your PostgreSQL username
-        'PASSWORD': 'abcd1234.',  # Your PostgreSQL password
+        'PASSWORD': 'zxcvbnm',  # Your PostgreSQL password
         'HOST': 'localhost',  # Host where PostgreSQL is running (e.g., localhost)
         'PORT': '5432',       # Default PostgreSQL port
     }
@@ -118,6 +118,18 @@ AUTHENTICATION_BACKENDS = [
 ]
 AUTH_USER_MODEL = 'accounts.UserProfile'  # Replace with your actual user model
 
+
+SITE_URL = 'http://127.0.0.1:8000'
+DEFAULT_FROM_EMAIL = 'mukhos1@gmail.com'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.example.com'  # Set your email host
+EMAIL_PORT = 587  # Set your email port
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_TIMEOUT = 10  # Set a timeout value
+EMAIL_HOST_USER = 'manhaira2122@gmail.com'  # Set your email address
+EMAIL_HOST_PASSWORD = 'AC-1200mesh' 
 
 
 # Internationalization
